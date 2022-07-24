@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Login Page</title>
+  {{>header}}
+  <body>
+    {{>navbar}}
+    <div class="container">
+      
+      <form action="/auth/login" method="post">
+        <h1 class="text">Login page</h1>
+        {{#if msg}}
+        <p class={{msg_type}}>{{msg}}</p>
+        {{/if}}
+        <div class="data">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="hengry@gmail.com" />
+        </div>
+
+        <div class="data">
+          <label for="Password">Password</label>
+          <input type="password" name="password"placeholder="Password" />
+        </div>
+
+        <a href="" class="forgot-pass">Forgot Password?</a>
+
+        <div class="btn">
+          <button>Login</button>
+        </div>
+
+        <div class="sign-up">
+          Not a member?
+          <a href="/register">sign up</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

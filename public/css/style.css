@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Ubuntu:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #5199E4;
+    height: 100vh;
+    width: 100%;
+   
+}
+.container,.container-fluid
+{
+    width: 450px;
+    background-color: rgb(252, 252, 252);
+    padding: 20px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);;
+
+}
+
+.container .text
+{
+text-align: center;
+font-size: 35px;
+font-weight: 600;
+color: #5199E4;
+}
+
+.container .data
+{
+    height: 30px;
+    margin: 35px 0px;
+}
+
+.container .data label
+{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container .data input
+{
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid silver;
+    font-size: 17px;
+    margin-top: 3px;
+    padding: 10px;
+}
+
+form .data input:focus
+{
+   border-color: #5199E4;
+   border-bottom-width:2px;
+}
+.container .forgot-pass
+{
+    color: #5199E4;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+    
+.container .forgot-pass:hover
+{
+    text-decoration: underline;
+}
+.container button
+{
+    border: 1px solid #5199E4;
+    height: 40px;
+    width: 100%;
+    background-color: #5199E4;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+    transition: all linear 2s;
+
+}
+
+.container button:hover
+{
+    background-color: blue;
+}
+
+.sign-up
+{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 17px;
+}
+.sign-up a
+{
+    color: #5199E4;
+    text-decoration: none;
+    
+}
+
+.sign-up a:hover,.sign-up a:focus
+{
+    text-decoration: underline;
+}
+
+.container-fluid
+{
+    width: 500px;
+}
+
+.nav-bar
+{
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.nav-links
+{
+   padding: 0 10px;
+   font-size: 20px;
+}
+
+.nav-links a
+{
+    height: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-links a:hover
+{
+    transition: 2s;
+    background-color: #c2d9f1;
+}
+.images
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img 
+{
+height: 200px;
+width: 200px;
+}
+h3
+{
+    padding: 10px;
+}
+
+p
+{
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.error
+{
+   background-color: red;
+   padding: 5px;
+    
+}
+
+.success
+{
+    background-color:green;
+    padding: 5px;
+}

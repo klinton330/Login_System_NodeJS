@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Register Page</title>
+  {{>header}}
+  <body>
+    {{>navbar}}
+    <div class="container">
+      
+      <form action="/auth/register" method="post">
+        <h1 class="text">Register</h1>
+        {{#if msg}}
+        <p class={{msg_type}}>{{msg}}</p>
+        {{/if}}
+        <div class="data">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="your name" />
+        </div>
+
+        <div class="data">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="hengry@gmail.com" />
+        </div>
+
+        <div class="data">
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Password" />
+        </div>
+
+        <div class="data">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            name="confirm_password"
+            placeholder="Confirm-Password"
+          />
+        </div>
+
+        <div class="btn">
+          <button>Register</button>
+        </div>
+
+        <div class="sign-up">
+          Already a member?
+          <a href="/">Login</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
